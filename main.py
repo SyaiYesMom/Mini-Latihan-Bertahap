@@ -1,8 +1,7 @@
 class Dosen:
     def __init__(self, nidn, nama):
-        # Validasi NIDN harus 10 digit angka
         if not (nidn.isdigit() and len(nidn) == 10):
-            raise ValueError("❌ NIDN harus terdiri dari 10 digit angka.")
+            raise ValueError("NIDN harus terdiri dari 10 digit angka.")
         self.nidn = nidn
         self.nama = nama
 
@@ -26,7 +25,7 @@ class KelasKuliah:
         if len(self.mahasiswa) < self.ruang.kapasitas:
             self.mahasiswa.append(nama)
         else:
-            print(f"⚠️ Tidak dapat menambah {nama}. Ruang {self.ruang.kode} sudah penuh!")
+            print(f"Tidak dapat menambah {nama}. Ruang {self.ruang.kode} sudah penuh!")
 
     def tampilkan_mahasiswa(self):
         print(f"\nDaftar Mahasiswa di {self.kode_kelas}:")
@@ -39,8 +38,6 @@ class KelasKuliah:
             if m[0].upper() in ['D', 'E']:
                 print(f"- {m}")
 
-
-# --- PROGRAM UTAMA ---
 try:
     dosen1 = Dosen("1234567890", "Triyono")
     dosen2 = Dosen("0987654321", "Syailendra")
@@ -49,13 +46,10 @@ try:
 except ValueError as e:
     print(e)
 
-# Buat ruang kuliah dengan kapasitas 10
-ruangA = Ruang("R101", 10)
+ruangA = Ruang("R101", 29)
 
-# Buat kelas kuliah
-kelas = KelasKuliah("IF-1", ruangA)
+kelas = KelasKuliah("TI - 23A5", ruangA)
 
-# Tambah beberapa mahasiswa ke kelas
 daftar_mahasiswa = [
     "Hafan", "Eka", "Aziz", "Irfan", "Minan", "Savina", "Trafika", "Lendra",
     "Luthfi", "Fitra", "Dhiwa", "Kahfi", "Desta", "Viqi", "Arsa", "Domingos",
@@ -66,6 +60,5 @@ daftar_mahasiswa = [
 for nama in daftar_mahasiswa:
     kelas.tambah_mahasiswa(nama)
 
-# Tampilkan daftar mahasiswa dan filter D/E
 kelas.tampilkan_mahasiswa()
 kelas.tampilkan_mahasiswa_awal_DE()
