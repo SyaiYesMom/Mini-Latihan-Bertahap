@@ -75,11 +75,11 @@ Menghubungkan antara ruang kuliah dan mahasiswa.
    dosen2 = Dosen("09876543212345", "Syailendra")  # Akan error karena NIDN lebih dari 10 digit
    ```
 
-  Jika NIDN tidak valid, program akan menampilkan pesan kesalahan:
+   Jika NIDN tidak valid, program akan menampilkan pesan kesalahan:
 
-  ```bash
-  NIDN harus terdiri dari 10 digit angka.
-  ```
+   ```bash
+   NIDN harus terdiri dari 10 digit angka.
+   ```
 
 2. Membuat objek ruang:
 
@@ -102,9 +102,9 @@ Menghubungkan antara ruang kuliah dan mahasiswa.
    
 5. Menampilkan hasil:
 
- - Seluruh mahasiswa di kelas
+  - Seluruh mahasiswa di kelas
 
- - Mahasiswa dengan nama diawali huruf D atau E
+  - Mahasiswa dengan nama diawali huruf D atau E
 
 ## Contoh Output
 
