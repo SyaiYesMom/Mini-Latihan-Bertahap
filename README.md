@@ -1,115 +1,109 @@
 # Mini Latihan Bertahap – Pemrograman Python
-## Saya membuat main.py untuk gabungan file A - D
 
 Repository ini berisi kumpulan latihan sederhana dalam bahasa Python yang dibuat untuk memenuhi tugas mata kuliah Pemrograman Python yang diberikan oleh Bapak Triyono, S.Kom | Program Studi Teknik Informatika – Universitas Duta Bangsa (UDB).
 
-Seluruh tugas disusun secara bertahap (A sampai D) untuk memahami konsep kelas (class), atribut, enkapsulasi, relasi antar objek, dan pengolahan data sederhana.
+Dibuat menggunakan Python dengan pendekatan OOP (Object-Oriented Programming).
 
 
-## Struktur Proyek
+## Deskripsi Program
+
+1. `Dosen`
+2. `Ruang`
+3. `Kelas Kuliah`
+
+## Alur Program
+
+1. Membuat objek dosen:
+   
+   ```bash
+   dosen1 = Dosen("1234567890", "Triyono")
+   dosen2 = Dosen("09876543212345", "Syailendra")  # Akan error karena NIDN lebih dari 10 digit
+   ```
+
+  Jika NIDN tidak valid, program akan menampilkan pesan kesalahan:
+
+  ```bash
+  NIDN harus terdiri dari 10 digit angka.
+  ```
+
+2. Membuat objek ruang:
+
+   ```bash
+   ruangA = Ruang("R101", 29)
+   ```
+   
+4. Membuat objek kelas kuliah:
+
+   ```bash
+   kelas = KelasKuliah("TI - 23A5", ruangA)
+   ```
+   
+6. Menambahkan daftar mahasiswa:
+
+   ```bash
+   for nama in daftar_mahasiswa:
+   kelas.tambah_mahasiswa(nama)
+   ```
+   
+8. Menampilkan hasil:
+
+ - Seluruh mahasiswa di kelas
+
+ - Mahasiswa dengan nama diawali huruf D atau E
+
+## Contoh Output
 
 ```bash
-Mini-Latihan-Bertahap/
-├── A.py   → Pengenalan class Dosen
-├── B.py   → Enkapsulasi dan validasi NIDN dengan property
-├── C.py   → Relasi antar class (Ruang & KelasKuliah)
-├── D.py   → Pengolahan data list & filtering objek Mahasiswa
-```
-
-
-## Penjelasan Setiap File
-
-### A.py – Class Dasar (Pembuatan Objek)
-
-Mengenalkan konsep dasar class dan instansiasi objek.
-Program membuat dua objek Dosen dan menampilkan informasinya.
-
-Fitur:
-
- - Konstruktor __init__ dengan atribut nidn dan nama.
-
- - Metode info() untuk menampilkan data dosen.
-
-Contoh Output :
-
-```bash
+NIDN harus terdiri dari 10 digit angka.
 Dosen Triyono - 1234567890
-Dosen Syailendra - 0987654321
-```
 
-### B.py – Enkapsulasi dan Property Setter
+Daftar Mahasiswa di TI - 23A5:
+- Hafan
+- Eka
+- Aziz
+- Irfan
+- Minan
+- Savina
+- Trafika
+- Lendra
+- Luthfi
+- Fitra
+- Dhiwa
+- Kahfi
+- Desta
+- Viqi
+- Arsa
+- Domingos
+- Pratama
+- Gigieh
+- Faris
+- Ridho
+- Adit
+- Bima
+- Fahryan
+- Nabil
+- Najib
+- Nathan
+- Raihan
+- Raka
+- Rofi
 
-Latihan ini menambahkan validasi data menggunakan property pada class `Dosen`.
-
-Fitur:
-
- - Menggunakan `_nidn` sebagai atribut privat.
-
- - Setter `@nidn.setter` untuk memastikan NIDN berisi angka dengan panjang tertentu.
-
- - Error handling ketika NIDN tidak sesuai format.
-
-Contoh output (jika valid):
-
-```bash
-123456789
-```
-
-Contoh error (jika salah format):
-
-```bash
-ValueError: NIDN harus 9 digit angka.
-```
-
-### C.py – Relasi Antar Class
-
-Latihan ini menunjukkan hubungan antar class (komposisi) antara `Ruang` dan `KelasKuliah`.
-
-Fitur:
-
- - Class `Ruang` memiliki atribut `kode` dan `kapasitas`.
-
- - Class `KelasKuliah` berisi daftar `peserta` dan method untuk menambah mahasiswa.
-
- - Validasi agar jumlah peserta tidak melebihi kapasitas ruang.
-
-Contoh output:
-
-```bash
-Tidak bisa menambahkan Irfan, kapasitas penuh!
-Kelas TI-23A5 (3/3)
-Peserta : - Gigieh
-          - Luthfi
-          - Lendraa
-```
-
-### D.py – Filter Data Objek
-
-Latihan ini melatih pengolahan data berbasis list of objects.
-
-Fitur:
-
- - Membuat daftar objek `Mahasiswa`.
-
- - Menampilkan hanya mahasiswa dengan huruf awal ‘D’ atau ‘E’.
-
-Contoh output:
-
-```bash
-Mahasiswa dengan huruf awal D atau E:
+Mahasiswa dengan nama diawali huruf D atau E:
+- Eka
 - Dhiwa
 - Desta
 - Domingos
-- Dosen
-- Eka
 ```
 
-## Cara Menjalankan Program
+## Konsep yang Digunakan
 
- 1. Pastikan sudah menginstal Python 3.x
+ - Object-Oriented Programming (OOP)
 
- 2. Jalankan file yang diinginkan, misalnya:
-    ```bash
-    python A.py
-    ```
- 3. Lihat hasilnya di terminal.
+ - Validasi Input
+
+ - Exception Handling (try-except)
+
+ -  List dan Perulangan
+
+ - Pencarian berdasarkan kondisi huruf awal
+
