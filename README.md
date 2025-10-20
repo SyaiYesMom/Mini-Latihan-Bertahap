@@ -7,9 +7,62 @@ Dibuat menggunakan Python dengan pendekatan OOP (Object-Oriented Programming).
 
 ## Deskripsi Program
 
-1. `Dosen`
-2. `Ruang`
-3. `Kelas Kuliah`
+Program terdiri dari tiga kelas utama:
+
+### 1. `Dosen`
+Mewakili data seorang dosen.
+
+ - Atribut:
+
+    - nidn → Nomor Induk Dosen Nasional (harus 10 digit angka)
+
+    -  nama → Nama dosen
+
+ - Validasi:
+
+    - Jika nidn bukan angka atau tidak berjumlah 10 digit, maka program akan memunculkan ValueError.
+
+ - Metode:
+
+    - info() → Menampilkan informasi dosen dalam format:
+      ```bash
+      Dosen [nama] - [nidn]
+      ```
+
+### 2. `Ruang`
+
+Mewakili data ruang kelas.
+
+ - Atribut:
+
+    - `kode` → Kode ruang (contoh: R101)
+
+    - `kapasitas` → Jumlah maksimum mahasiswa yang dapat ditampung
+
+### 3. `Kelas Kuliah`
+
+Menghubungkan antara ruang kuliah dan mahasiswa.
+
+ - Atribut:
+
+    - kode_kelas → Kode kelas (contoh: TI - 23A5)
+
+    - ruang → Objek dari kelas Ruang
+
+    - mahasiswa → List untuk menyimpan nama mahasiswa yang terdaftar
+
+ -  Metode:
+
+    - tambah_mahasiswa(nama)
+    - Menambahkan mahasiswa jika ruang belum penuh.
+
+ - tampilkan_mahasiswa()
+
+    - Menampilkan seluruh daftar mahasiswa di kelas.
+
+ - tampilkan_mahasiswa_awal_DE()
+   
+    - Menampilkan mahasiswa yang namanya diawali huruf D atau E.
 
 ## Alur Program
 
