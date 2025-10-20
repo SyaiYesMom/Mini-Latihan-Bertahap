@@ -14,17 +14,17 @@ Mewakili data seorang dosen.
 
  - Atribut:
 
-    - nidn → Nomor Induk Dosen Nasional (harus 10 digit angka)
+    - `nidn` → Nomor Induk Dosen Nasional (harus 10 digit angka)
 
-    -  nama → Nama dosen
+    -  `nama` → Nama dosen
 
  - Validasi:
 
-    - Jika nidn bukan angka atau tidak berjumlah 10 digit, maka program akan memunculkan ValueError.
+    - Jika `nidn` bukan angka atau tidak berjumlah 10 digit, maka program akan memunculkan `ValueError`.
 
  - Metode:
 
-    - info() → Menampilkan informasi dosen dalam format:
+    - `info()` → Menampilkan informasi dosen dalam format:
       ```bash
       Dosen [nama] - [nidn]
       ```
@@ -45,24 +45,25 @@ Menghubungkan antara ruang kuliah dan mahasiswa.
 
  - Atribut:
 
-    - kode_kelas → Kode kelas (contoh: TI - 23A5)
+    - `kode_kelas` → Kode kelas (contoh: TI - 23A5)
 
-    - ruang → Objek dari kelas Ruang
+    - `ruang` → Objek dari kelas `Ruang`
 
-    - mahasiswa → List untuk menyimpan nama mahasiswa yang terdaftar
+    - `mahasiswa` → List untuk menyimpan nama mahasiswa yang terdaftar
 
  -  Metode:
 
-    - tambah_mahasiswa(nama)
-    - Menambahkan mahasiswa jika ruang belum penuh.
+    - `tambah_mahasiswa(nama)`
+      
+      Menambahkan mahasiswa jika ruang belum penuh.
 
- - tampilkan_mahasiswa()
+    - `tampilkan_mahasiswa()`
 
-    - Menampilkan seluruh daftar mahasiswa di kelas.
+      Menampilkan seluruh daftar mahasiswa di kelas.
 
- - tampilkan_mahasiswa_awal_DE()
+    - `tampilkan_mahasiswa_awal_DE()`
    
-    - Menampilkan mahasiswa yang namanya diawali huruf D atau E.
+      Menampilkan mahasiswa yang namanya diawali huruf D atau E.
 
 ## Alur Program
 
@@ -85,20 +86,20 @@ Menghubungkan antara ruang kuliah dan mahasiswa.
    ruangA = Ruang("R101", 29)
    ```
    
-4. Membuat objek kelas kuliah:
+3. Membuat objek kelas kuliah:
 
    ```bash
    kelas = KelasKuliah("TI - 23A5", ruangA)
    ```
    
-6. Menambahkan daftar mahasiswa:
+4. Menambahkan daftar mahasiswa:
 
    ```bash
    for nama in daftar_mahasiswa:
    kelas.tambah_mahasiswa(nama)
    ```
    
-8. Menampilkan hasil:
+5. Menampilkan hasil:
 
  - Seluruh mahasiswa di kelas
 
