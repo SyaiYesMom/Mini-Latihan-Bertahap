@@ -25,6 +25,7 @@ Mewakili data seorang dosen.
  - Metode:
 
     - `info()` → Menampilkan informasi dosen dalam format:
+      
       ```bash
       Dosen [nama] - [nidn]
       ```
