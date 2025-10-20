@@ -25,7 +25,7 @@ class KelasKuliah:
         if len(self.mahasiswa) < self.ruang.kapasitas:
             self.mahasiswa.append(nama)
         else:
-            print(f"Tidak dapat menambah {nama}. Ruang {self.ruang.kode} sudah penuh!")
+            print(f"\nTidak dapat menambah {nama}. Ruang {self.ruang.kode} sudah penuh!")
 
     def tampilkan_mahasiswa(self):
         print(f"\nDaftar Mahasiswa di {self.kode_kelas}:")
