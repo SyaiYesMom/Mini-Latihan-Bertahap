@@ -1,4 +1,4 @@
-<img width="77" height="37" alt="image" src="https://github.com/user-attachments/assets/06382713-9efc-4483-b8c4-94fcd272fcf8" /># Mini Latihan Bertahap – Pemrograman Python
+# Mini Latihan Bertahap – Pemrograman Python
 
 Repository ini berisi kumpulan latihan sederhana dalam bahasa Python yang dibuat untuk memenuhi tugas mata kuliah Pemrograman Dasar bersama Bapak Triyono, S.Kom di Program Studi Teknik Informatika – Universitas Duta Bangsa (UDB).
 
