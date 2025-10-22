@@ -1,6 +1,6 @@
-# Mini Latihan Bertahap – Pemrograman Python
+# OOP - Tugas Pemrograman Python
 
-Repository ini berisi kumpulan latihan sederhana dalam bahasa Python yang dibuat untuk memenuhi tugas mata kuliah Pemrograman Python yang diberikan oleh Bapak Triyono, S.Kom | Program Studi Teknik Informatika – Universitas Duta Bangsa (UDB).
+Repository ini berisi Code dalam bahasa Python yang dibuat untuk memenuhi tugas mata kuliah Pemrograman Python yang diberikan oleh Bapak Triyono, S.Kom | Program Studi Teknik Informatika – Universitas Duta Bangsa (UDB).
 
 Dibuat menggunakan Python dengan pendekatan OOP (Object-Oriented Programming).
 
